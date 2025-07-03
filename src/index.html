@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ciao!</h1>
+    <label for="file-input">file:</label>
+    <input type="file" name="file" id="file-input">
+
+    <br>
+
+    <label for="subd">suddivisioni</label>
+    <input type="number" name="subd" id="subd" min="2" max="24" value="12">
+    
+    <br>
+
+    <label for="width">larghezza</label>
+    <input type="number" name="width" id="width" min="360" max="2160" value="1080">
+
+    <br>
+    
+    <label for="height">altezza</label>
+    <input type="number" name="height" id="height" min="360" max="2160" value="1080">
+
+    <br>
+
+    <input type="button" id="submit-btn" value="shuffle image">
+    <input type="button" id="download-btn" value="download image" disabled>
+
+    <canvas id="c" width="1080" height="1080" style="width: 100%"></canvas>
+    
+    <img style="display: none" src="../assets/Rho_Ophiuchi.jpg" alt="img" id="i">
+</body>
+
+<script src="main.ts" type="module"></script>
+
+</html>
